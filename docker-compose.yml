@@ -1,0 +1,23 @@
+version: 3
+service:
+ cont29:
+    image: akshaykumar29/img1
+    ports:
+        - 5000:5000
+    deploy:
+      replicas: 3
+    networks:
+      akshay29
+      
+ cont30:
+    image: akshaykumar29/img2
+    ports:
+        - 6000:6000
+    deploy:
+      replicas: 2
+    networks:
+      akshay29
+     
+networks:
+ - akshay29:
+      
