@@ -7,8 +7,8 @@ node{
 
     stage("docker build"){
 
-        sh 'docker build -t akshaykumar29/img1 --target img1'
-        sh 'docker build -t akshaykumar29/img2 --target img2'
+        sh 'docker build -t akshaykumar29/img1 . --target img1'
+        sh 'docker build -t akshaykumar29/img2 . --target img2'
 
     }
 
